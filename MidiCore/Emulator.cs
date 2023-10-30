@@ -6,11 +6,7 @@ namespace QuartetPlayer.MidiCore
     internal class Emulator
     {
         protected static bool kickBool = true;
-        //53, 55, 57, 59, 60
-        private static List<int> kickNotes = new List<int>() { 48, 59 };
         protected static bool snareBool = true;
-        //57
-        private static List<int> snareNotes = new List<int>() { 49, 50, 51, 52 };
         public static void Emulation(int note)
         {
             InputSimulator isim = new InputSimulator();
