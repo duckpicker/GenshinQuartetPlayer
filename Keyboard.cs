@@ -1,6 +1,5 @@
 ﻿using WindowsInput.Native;
 
-
 namespace QuartetPlayer
 {
     internal class Keyboard

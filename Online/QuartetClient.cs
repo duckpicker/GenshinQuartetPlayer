@@ -1,5 +1,4 @@
-﻿using Melanchall.DryWetMidi.Core;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using QuartetPlayer.MidiCore;
 using QuartetPlayer.Online.Events;
 using QuartetPlayer.Online.OnlineWinForms;
@@ -102,7 +101,10 @@ public class QuartetClient
                 Console.WriteLine(typeof(SendTestNoteEvent).FullName);
                 WindowFinder.Find();
                 Thread.Sleep(1000 + MyClient.Offset);
-                Emulator.Emulation(NoteTranspos.Transpos(60));
+                if (WindowFinder.WindowStatus())
+                {
+                    Emulator.Emulation(NoteTranspos.Transpos(60));
+                }
                 Thread.Sleep(100);
                 WindowFinder.MinimizeWindow();
             }

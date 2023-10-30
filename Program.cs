@@ -1,5 +1,3 @@
-using QuartetPlayer.Online;
-
 namespace QuartetPlayer
 {
     internal static class Program

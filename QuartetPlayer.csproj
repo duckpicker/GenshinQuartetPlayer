@@ -27,13 +27,12 @@
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
         <Compile Remove="QuartetServer\**" />
-        <Compile Update="Online\OnlineWinForms\ConnectServerMenu.cs">
+        <Compile Update="Forms\OnlineWinForms\ConnectServerMenu.cs">
           <SubType>Form</SubType>
         </Compile>
-        <Compile Update="Online\OnlineWinForms\CreateServerMenu.cs">
+        <Compile Update="Forms\OnlineWinForms\CreateServerMenu.cs">
           <SubType>Form</SubType>
         </Compile>
-        <Compile Update="Online\OnlineWinForms\ServerMenuForm.cs" />
     </ItemGroup>
 
     <ItemGroup>

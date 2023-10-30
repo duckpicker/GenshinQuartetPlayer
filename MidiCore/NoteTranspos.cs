@@ -1,6 +1,5 @@
 ﻿using Melanchall.DryWetMidi.Interaction;
 
-
 namespace QuartetPlayer.MidiCore
 {
     internal class NoteTranspos

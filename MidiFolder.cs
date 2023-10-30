@@ -1,5 +1,4 @@
-﻿
-namespace QuartetPlayer
+﻿namespace QuartetPlayer
 {
     internal class MidiFolder
     {

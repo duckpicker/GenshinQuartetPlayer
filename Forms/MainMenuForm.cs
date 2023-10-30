@@ -1,10 +1,6 @@
-﻿using Melanchall.DryWetMidi.Core;
-using Microsoft.VisualBasic.ApplicationServices;
-using NAudio.Midi;
-using QuartetPlayer.MidiCore;
+﻿using QuartetPlayer.MidiCore;
 using QuartetPlayer.Online;
 using System.Diagnostics;
-using System.IO;
 
 namespace QuartetPlayer
 {
@@ -117,7 +113,12 @@ namespace QuartetPlayer
 
         private void OpenFolderStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start("explorer.exe", MidiFolder.downloadArea);
+            try
+            {
+                Process.Start("explorer.exe", MidiFolder.downloadArea);
+            }
+            catch (Exception ex) { }
+            
         }
 
         private void Transposition_Click(object sender, EventArgs e)

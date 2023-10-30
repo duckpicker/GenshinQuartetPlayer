@@ -1,5 +1,4 @@
 ﻿using QuartetPlayer.Online.OnlineWinForms;
-using WebSocketSharp;
 
 namespace QuartetPlayer.Online;
 

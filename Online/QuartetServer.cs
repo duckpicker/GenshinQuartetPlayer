@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.Eventing.Reader;
-using CoreWCF.IdentityModel.Tokens;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using QuartetPlayer.Online.Events;
 using WebSocketSharp;
 using WebSocketSharp.Server;
