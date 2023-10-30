@@ -231,7 +231,12 @@ namespace QuartetPlayer
                 Path.Add(file);
                 fileListBox.Items.Add(file.Replace(MidiFolder.downloadArea + "\\", ""));
             }
-            if (MidiFolder.files.Count != 0) fileListBox.SelectedIndex = 0;
+            if (MidiFolder.files.Count != 0)
+            {
+                fileListBox.SelectedIndex = 0;
+                CreateServerToolStripMenuItem.Enabled = true;
+            }
+            else CreateServerToolStripMenuItem.Enabled = false;
         }
     }
 }
