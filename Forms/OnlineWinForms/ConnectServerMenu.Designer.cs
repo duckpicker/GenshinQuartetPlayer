@@ -60,7 +60,7 @@
             createButton.Name = "createButton";
             createButton.Size = new Size(100, 23);
             createButton.TabIndex = 9;
-            createButton.Text = "Подключиться";
+            createButton.Text = "Connect";
             createButton.UseVisualStyleBackColor = true;
             createButton.Click += createButton_Click;
             // 
@@ -69,18 +69,18 @@
             label2.AutoSize = true;
             label2.Location = new Point(12, 53);
             label2.Name = "label2";
-            label2.Size = new Size(51, 15);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 8;
-            label2.Text = "Оффсет";
+            label2.Text = "Offset";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(31, 15);
+            label1.Size = new Size(39, 15);
             label1.TabIndex = 7;
-            label1.Text = "Имя";
+            label1.Text = "Name";
             // 
             // ipTextBox
             // 
@@ -95,9 +95,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(12, 97);
             label3.Name = "label3";
-            label3.Size = new Size(87, 15);
+            label3.Size = new Size(62, 15);
             label3.TabIndex = 12;
-            label3.Text = "Адрес сервера";
+            label3.Text = "IP Address";
             // 
             // ConnectServerMenu
             // 
@@ -118,7 +118,7 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterParent;
-            Text = "Подключиться к комнате";
+            Text = "Connect to lobby";
             FormClosing += ConnectedServerMenu_FormClosing;
             Load += ConnectedServerMenu_Load;
             ResumeLayout(false);

@@ -52,7 +52,7 @@
             readyButton.Name = "readyButton";
             readyButton.Size = new Size(93, 23);
             readyButton.TabIndex = 38;
-            readyButton.Text = "Не готов";
+            readyButton.Text = "Not Ready";
             readyButton.UseVisualStyleBackColor = true;
             readyButton.Click += readyButton_Click;
             // 
@@ -61,18 +61,18 @@
             Transposition.AutoSize = true;
             Transposition.Location = new Point(139, 106);
             Transposition.Name = "Transposition";
-            Transposition.Size = new Size(99, 30);
+            Transposition.Size = new Size(77, 30);
             Transposition.TabIndex = 34;
-            Transposition.Text = "Транспонировка\r\nРекомендуемая:";
+            Transposition.Text = "Transposition\r\nRecd:";
             // 
             // Instrument
             // 
             Instrument.AutoSize = true;
             Instrument.Location = new Point(12, 121);
             Instrument.Name = "Instrument";
-            Instrument.Size = new Size(74, 15);
+            Instrument.Size = new Size(65, 15);
             Instrument.TabIndex = 32;
-            Instrument.Text = "Инструмент";
+            Instrument.Text = "Instrument";
             // 
             // TransposeUpDown
             // 
@@ -87,7 +87,7 @@
             // InstrumentComboBox
             // 
             InstrumentComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            InstrumentComboBox.Items.AddRange(new object[] { "Лира/Цитра", "Старая лира", "Барабан" });
+            InstrumentComboBox.Items.AddRange(new object[] { "Lyre/Zither", "Old lyre", "Drum" });
             InstrumentComboBox.Location = new Point(12, 139);
             InstrumentComboBox.Name = "InstrumentComboBox";
             InstrumentComboBox.Size = new Size(121, 23);
@@ -109,9 +109,9 @@
             TrackList.AutoSize = true;
             TrackList.Location = new Point(12, 165);
             TrackList.Name = "TrackList";
-            TrackList.Size = new Size(58, 15);
+            TrackList.Size = new Size(39, 15);
             TrackList.TabIndex = 33;
-            TrackList.Text = "Дорожки";
+            TrackList.Text = "Tracks";
             // 
             // windFindButton
             // 
@@ -119,7 +119,7 @@
             windFindButton.Name = "windFindButton";
             windFindButton.Size = new Size(93, 23);
             windFindButton.TabIndex = 27;
-            windFindButton.Text = "Открыть окно";
+            windFindButton.Text = "Open window";
             windFindButton.UseVisualStyleBackColor = true;
             windFindButton.Click += windFindButton_Click;
             // 
@@ -139,7 +139,7 @@
             DisconnectButton.Name = "DisconnectButton";
             DisconnectButton.Size = new Size(93, 23);
             DisconnectButton.TabIndex = 41;
-            DisconnectButton.Text = "Отключиться";
+            DisconnectButton.Text = "Disconnect";
             DisconnectButton.UseVisualStyleBackColor = true;
             DisconnectButton.Click += DisconnectButton_Click;
             // 
@@ -149,7 +149,7 @@
             SendPingButton.Name = "SendPingButton";
             SendPingButton.Size = new Size(88, 23);
             SendPingButton.TabIndex = 42;
-            SendPingButton.Text = "Отправить";
+            SendPingButton.Text = "Send offset";
             SendPingButton.UseVisualStyleBackColor = true;
             SendPingButton.Click += SendPingButton_Click;
             // 
@@ -158,9 +158,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(111, 9);
             label1.Name = "label1";
-            label1.Size = new Size(51, 15);
+            label1.Size = new Size(39, 15);
             label1.TabIndex = 43;
-            label1.Text = "Оффсет";
+            label1.Text = "Offset";
             // 
             // OffsetUpDown
             // 

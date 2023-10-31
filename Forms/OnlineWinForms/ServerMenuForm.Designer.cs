@@ -59,27 +59,28 @@
             Transposition.AutoSize = true;
             Transposition.Location = new Point(139, 173);
             Transposition.Name = "Transposition";
-            Transposition.Size = new Size(99, 30);
+            Transposition.Size = new Size(77, 30);
             Transposition.TabIndex = 22;
-            Transposition.Text = "Транспонировка\r\nРекомендуемая:";
+            Transposition.Text = "Transposition\r\nRecd:";
+            Transposition.Click += Transposition_Click;
             // 
             // Instrument
             // 
             Instrument.AutoSize = true;
             Instrument.Location = new Point(12, 188);
             Instrument.Name = "Instrument";
-            Instrument.Size = new Size(74, 15);
+            Instrument.Size = new Size(65, 15);
             Instrument.TabIndex = 20;
-            Instrument.Text = "Инструмент";
+            Instrument.Text = "Instrument";
             // 
             // PlayList
             // 
             PlayList.AutoSize = true;
             PlayList.Location = new Point(328, 12);
             PlayList.Name = "PlayList";
-            PlayList.Size = new Size(61, 15);
+            PlayList.Size = new Size(44, 15);
             PlayList.TabIndex = 19;
-            PlayList.Text = "Плейлист";
+            PlayList.Text = "Playlist";
             // 
             // TransposeUpDown
             // 
@@ -94,7 +95,7 @@
             // InstrumentComboBox
             // 
             InstrumentComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
-            InstrumentComboBox.Items.AddRange(new object[] { "Лира/Цитра", "Старая лира", "Барабан" });
+            InstrumentComboBox.Items.AddRange(new object[] { "Lyre/Zither", "Old lyre", "Drum" });
             InstrumentComboBox.Location = new Point(12, 206);
             InstrumentComboBox.Name = "InstrumentComboBox";
             InstrumentComboBox.Size = new Size(121, 23);
@@ -128,7 +129,7 @@
             startButton.Name = "startButton";
             startButton.Size = new Size(93, 23);
             startButton.TabIndex = 14;
-            startButton.Text = "Запустить";
+            startButton.Text = "Start Play";
             startButton.UseVisualStyleBackColor = true;
             startButton.Click += startButton_Click;
             // 
@@ -137,9 +138,9 @@
             TrackList.AutoSize = true;
             TrackList.Location = new Point(12, 232);
             TrackList.Name = "TrackList";
-            TrackList.Size = new Size(58, 15);
+            TrackList.Size = new Size(39, 15);
             TrackList.TabIndex = 21;
-            TrackList.Text = "Дорожки";
+            TrackList.Text = "Tracks";
             // 
             // windFindButton
             // 
@@ -147,7 +148,7 @@
             windFindButton.Name = "windFindButton";
             windFindButton.Size = new Size(93, 23);
             windFindButton.TabIndex = 12;
-            windFindButton.Text = "Открыть окно";
+            windFindButton.Text = "Open window";
             windFindButton.UseVisualStyleBackColor = true;
             windFindButton.Click += windFindButton_Click;
             // 
@@ -156,9 +157,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(111, 43);
             label1.Name = "label1";
-            label1.Size = new Size(48, 15);
+            label1.Size = new Size(44, 15);
             label1.TabIndex = 24;
-            label1.Text = "Игроки";
+            label1.Text = "Players";
             // 
             // kickButton
             // 
@@ -166,7 +167,7 @@
             kickButton.Name = "kickButton";
             kickButton.Size = new Size(93, 23);
             kickButton.TabIndex = 25;
-            kickButton.Text = "Исключить";
+            kickButton.Text = "Kick";
             kickButton.UseVisualStyleBackColor = true;
             kickButton.Click += kickButton_Click;
             // 
@@ -176,7 +177,7 @@
             readyButton.Name = "readyButton";
             readyButton.Size = new Size(93, 23);
             readyButton.TabIndex = 26;
-            readyButton.Text = "Не готов";
+            readyButton.Text = "Not Ready";
             readyButton.UseVisualStyleBackColor = true;
             readyButton.Click += readyButton_Click;
             // 
@@ -196,9 +197,9 @@
             PlayCheckBox.AutoSize = true;
             PlayCheckBox.Location = new Point(12, 157);
             PlayCheckBox.Name = "PlayCheckBox";
-            PlayCheckBox.Size = new Size(80, 19);
+            PlayCheckBox.Size = new Size(67, 19);
             PlayCheckBox.TabIndex = 28;
-            PlayCheckBox.Text = "Не играть";
+            PlayCheckBox.Text = "No Play";
             PlayCheckBox.UseVisualStyleBackColor = true;
             PlayCheckBox.CheckedChanged += PlayCheckBox_CheckedChanged;
             // 
@@ -215,11 +216,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(271, 12);
+            label2.Location = new Point(283, 12);
             label2.Name = "label2";
-            label2.Size = new Size(51, 15);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 30;
-            label2.Text = "Оффсет";
+            label2.Text = "Offset";
             // 
             // SendServerOffset
             // 
@@ -227,7 +228,7 @@
             SendServerOffset.Name = "SendServerOffset";
             SendServerOffset.Size = new Size(80, 23);
             SendServerOffset.TabIndex = 31;
-            SendServerOffset.Text = "Отправить";
+            SendServerOffset.Text = "Change";
             SendServerOffset.UseVisualStyleBackColor = true;
             SendServerOffset.Click += SendServerOffset_Click;
             // 
@@ -237,13 +238,13 @@
             StopButton.Name = "StopButton";
             StopButton.Size = new Size(93, 23);
             StopButton.TabIndex = 32;
-            StopButton.Text = "Остановить";
+            StopButton.Text = "Stop Play";
             StopButton.UseVisualStyleBackColor = true;
             StopButton.Click += StopButton_Click;
             // 
             // reloadFilesButton
             // 
-            reloadFilesButton.Location = new Point(395, 4);
+            reloadFilesButton.Location = new Point(378, 4);
             reloadFilesButton.Name = "reloadFilesButton";
             reloadFilesButton.Size = new Size(21, 23);
             reloadFilesButton.TabIndex = 33;
@@ -257,7 +258,7 @@
             TestAllButton.Name = "TestAllButton";
             TestAllButton.Size = new Size(80, 23);
             TestAllButton.TabIndex = 34;
-            TestAllButton.Text = "Тест";
+            TestAllButton.Text = "Test";
             TestAllButton.UseVisualStyleBackColor = true;
             TestAllButton.Click += TestAllButton_Click;
             // 

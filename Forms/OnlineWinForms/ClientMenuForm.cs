@@ -25,8 +25,8 @@ namespace QuartetPlayer.Online.OnlineWinForms
 
             int[] bestTranspos = NoteTranspos.bestTranspos();
 
-            this.Invoke(new Action(() => Transposition.Text = "Транспонировка\n" +
-                $"Рек.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})"));
+            this.Invoke(new Action(() => Transposition.Text = "Transposition\n" +
+                    $"Recd.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})"));
 
         }
 
@@ -43,7 +43,7 @@ namespace QuartetPlayer.Online.OnlineWinForms
         public ClientMenuForm()
         {
             InitializeComponent();
-            readyButton.Text = "Не готов"; readyButton.ForeColor = Color.Red;
+            readyButton.Text = "Not Ready"; readyButton.ForeColor = Color.Red;
             InstrumentComboBox.SelectedIndex = 0;
             FormEvent += TriggerEvent;
             PingFormEvent = TriggerPingFormEvent;
@@ -68,12 +68,12 @@ namespace QuartetPlayer.Online.OnlineWinForms
         {
             if (QuartetClient.MyClient.IsReady != false)
             {
-                readyButton.Text = "Не готов"; readyButton.ForeColor = Color.Red;
+                readyButton.Text = "Not Ready"; readyButton.ForeColor = Color.Red;
                 QuartetClient.ClientIsReady();
             }
             else
             {
-                readyButton.Text = "Готов"; readyButton.ForeColor = Color.Green;
+                readyButton.Text = "Ready"; readyButton.ForeColor = Color.Green;
                 QuartetClient.ClientIsReady();
             }
         }
@@ -95,8 +95,8 @@ namespace QuartetPlayer.Online.OnlineWinForms
                         $"{Convert.ToString(trackChunk.Events.ElementAt(0)).Replace("Sequence/Track Name ", "")}", true);
                 }
                 int[] bestTranspos = NoteTranspos.bestTranspos();
-                Transposition.Text = "Транспонировка\n" +
-                    $"Рек.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
+                Transposition.Text = "Transposition\n" +
+                    $"Recd.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
             }
         }
 

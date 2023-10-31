@@ -43,9 +43,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(31, 15);
+            label1.Size = new Size(39, 15);
             label1.TabIndex = 0;
-            label1.Text = "Имя";
+            label1.Text = "Name";
             // 
             // ID
             // 
@@ -70,9 +70,9 @@
             label3.AutoSize = true;
             label3.Location = new Point(163, 96);
             label3.Name = "label3";
-            label3.Size = new Size(51, 15);
+            label3.Size = new Size(39, 15);
             label3.TabIndex = 6;
-            label3.Text = "Оффсет";
+            label3.Text = "Offset";
             // 
             // OffsetUpDown
             // 
@@ -89,7 +89,7 @@
             SendOffsetButton.Name = "SendOffsetButton";
             SendOffsetButton.Size = new Size(75, 23);
             SendOffsetButton.TabIndex = 8;
-            SendOffsetButton.Text = "Отправить";
+            SendOffsetButton.Text = "Send offset";
             SendOffsetButton.UseVisualStyleBackColor = true;
             SendOffsetButton.Click += SendOffsetButton_Click;
             // 

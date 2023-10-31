@@ -47,7 +47,7 @@
             button1.Name = "button1";
             button1.Size = new Size(95, 25);
             button1.TabIndex = 1;
-            button1.Text = "Применить";
+            button1.Text = "Change";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 

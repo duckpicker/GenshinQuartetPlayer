@@ -97,8 +97,8 @@ namespace QuartetPlayer
 
             int[] bestTranspos = NoteTranspos.bestTranspos();
 
-            Transposition.Text = "Транспонировка\n" +
-                $"Рек.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
+            Transposition.Text = "Transposition\n" +
+                    $"Recd.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
 
             TrackCheckBox.Items.Clear();
             foreach (var trackChunk in MidiFileRun.Track)
@@ -106,8 +106,6 @@ namespace QuartetPlayer
                 TrackCheckBox.Items.Add($"Events: {trackChunk.Events.Count} | {Convert.ToString(trackChunk.Events.ElementAt(0)).Replace("Sequence/Track Name ", "")}", true);
             }
         }
-
-
 
         public void SendCommandRun()
         {
@@ -118,11 +116,6 @@ namespace QuartetPlayer
         private void TrackCheckBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             MidiFileRun.SwitchTraks(TrackCheckBox.SelectedIndex);
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
         }
 
         private void InstrumentComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -137,36 +130,14 @@ namespace QuartetPlayer
                         $"{Convert.ToString(trackChunk.Events.ElementAt(0)).Replace("Sequence/Track Name ", "")}", true);
                 }
                 int[] bestTranspos = NoteTranspos.bestTranspos();
-                Transposition.Text = "Транспонировка\n" +
-                    $"Рек.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
+                Transposition.Text = "Transposition\n" +
+                    $"Recd.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
             };
         }
 
         private void TransposeUpDown_ValueChanged(object sender, EventArgs e)
         {
             NoteTranspos.transpos = (int)TransposeUpDown.Value;
-        }
-
-        private void OpenFileMenuItem_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "MIDI файлы (*.mid)|*.mid|Все файлы (*.*)|*.*";
-            openFileDialog.Multiselect = false;
-            openFileDialog.Title = "Выберите файл";
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                string filePath = openFileDialog.FileName;
-                string fileName = openFileDialog.SafeFileName;
-                Path.Add(filePath);
-                fileListBox.Items.Add(fileName);
-                fileListBox.SetSelected(fileListBox.Items.Count - 1, true);
-            }
-        }
-
-        private void OpenFolderStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Process.Start("explorer.exe", MidiFolder.downloadArea);
         }
 
         public async void ServerMenuForm_Load(object sender, EventArgs e)
@@ -189,12 +160,12 @@ namespace QuartetPlayer
             OffsetUpDown.Value = QuartetServer.Clients[0].Offset;
             if (QuartetServer.Clients[0].IsReady == true)
             {
-                readyButton.Text = "Не готов"; readyButton.ForeColor = Color.Red;
+                readyButton.Text = "Not Ready"; readyButton.ForeColor = Color.Red;
                 QuartetServer.Clients[0].IsReady = !QuartetServer.Clients[0].IsReady;
             }
             else
             {
-                readyButton.Text = "Готов"; readyButton.ForeColor = Color.Green;
+                readyButton.Text = "Ready"; readyButton.ForeColor = Color.Green;
                 QuartetServer.Clients[0].IsReady = !QuartetServer.Clients[0].IsReady;
             }
             TriggerFormEvent("");
@@ -272,6 +243,11 @@ namespace QuartetPlayer
             {
                 Emulator.Emulation(NoteTranspos.Transpos(60));
             }
+        }
+
+        private void Transposition_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

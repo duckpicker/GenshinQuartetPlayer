@@ -41,18 +41,18 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(31, 15);
+            label1.Size = new Size(39, 15);
             label1.TabIndex = 1;
-            label1.Text = "Имя";
+            label1.Text = "Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(12, 53);
             label2.Name = "label2";
-            label2.Size = new Size(51, 15);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 3;
-            label2.Text = "Оффсет";
+            label2.Text = "Offset";
             // 
             // createButton
             // 
@@ -60,7 +60,7 @@
             createButton.Name = "createButton";
             createButton.Size = new Size(75, 23);
             createButton.TabIndex = 4;
-            createButton.Text = "Создать";
+            createButton.Text = "Create";
             createButton.UseVisualStyleBackColor = true;
             createButton.Click += createButton_Click;
             // 
@@ -93,7 +93,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "CreateServerMenu";
-            Text = "Создать комнату";
+            Text = "Create lobby";
             FormClosing += CreateServerMenu_FormClosing;
             Load += CreateServerMenu_Load;
             ResumeLayout(false);

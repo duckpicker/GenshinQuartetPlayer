@@ -51,8 +51,8 @@ namespace QuartetPlayer
 
             int[] bestTranspos = MidiCore.NoteTranspos.bestTranspos();
 
-            Transposition.Text = "Транспонировка\n" +
-                $"Рек.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
+            Transposition.Text = "Transposition\n" +
+                    $"Recd.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
 
             TrackCheckBox.Items.Clear();
 
@@ -84,8 +84,8 @@ namespace QuartetPlayer
                         $"{Convert.ToString(trackChunk.Events.ElementAt(0)).Replace("Sequence/Track Name ", "")}", true);
                 }
                 int[] bestTranspos = NoteTranspos.bestTranspos();
-                Transposition.Text = "Транспонировка\n" +
-                    $"Рек.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
+                Transposition.Text = "Transposition\n" +
+                    $"Recd.: {bestTranspos[0]}/{bestTranspos[0] - 12} {bestTranspos[1]} ({bestTranspos[2]})";
             }
         }
 
@@ -97,9 +97,9 @@ namespace QuartetPlayer
         private void OpenFileMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "MIDI файлы (*.mid)|*.mid|Все файлы (*.*)|*.*";
+            openFileDialog.Filter = "MIDI files (*.mid)|*.mid|All files (*.*)|*.*";
             openFileDialog.Multiselect = false;
-            openFileDialog.Title = "Выберите файл";
+            openFileDialog.Title = "Select a file.";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -118,7 +118,7 @@ namespace QuartetPlayer
                 Process.Start("explorer.exe", MidiFolder.downloadArea);
             }
             catch (Exception ex) { }
-            
+
         }
 
         private void Transposition_Click(object sender, EventArgs e)
@@ -176,7 +176,7 @@ namespace QuartetPlayer
 
         private void участникиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Forms.ProjectPartners projectPartners = new Forms.ProjectPartners();
+            Forms.Contributors projectPartners = new Forms.Contributors();
             projectPartners.ShowDialog();
         }
 
