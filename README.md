@@ -50,6 +50,9 @@ The distinctive feature of **GenshinQuartetPlayer** is the ability to play with 
 
 <div align="center"><img src=https://i.imgur.com/IfD6b1E.png></div>
 
+**Here is what the user panel looks like:**
+ <div align="center"><img src=https://i.imgur.com/AZpVlrW.png></div>
+
 
 - In the admin panel, you can select a MIDI file, and it will be automatically sent to all connected users.
 
@@ -63,6 +66,3 @@ The distinctive feature of **GenshinQuartetPlayer** is the ability to play with 
 - To check the delays for both the admin and the users, the admin should press the `Test` button.
 - Once all users have configured their tracks, instruments, and transpositions and turned the `Ready` button green, the lobby admin can press the `Start Play` button.
   - The `Ready` / `Not Ready` button reflects the current status.
-
-**Here is what the user panel looks like:**
- <div align="center"><img src=https://i.imgur.com/AZpVlrW.png></div>
