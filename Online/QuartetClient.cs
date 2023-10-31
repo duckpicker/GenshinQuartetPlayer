@@ -96,9 +96,7 @@ public class QuartetClient
         // get test note event
         if (typeof(SendTestNoteEvent).FullName == jsonBaseClass.ClassType)
         {
-            if (MyClient.IsReady = true)
-            {
-                Console.WriteLine(typeof(SendTestNoteEvent).FullName);
+            Console.WriteLine(typeof(SendTestNoteEvent).FullName);
                 WindowFinder.Find();
                 Thread.Sleep(1000 + MyClient.Offset);
                 if (WindowFinder.WindowStatus())
@@ -107,7 +105,6 @@ public class QuartetClient
                 }
                 Thread.Sleep(100);
                 WindowFinder.MinimizeWindow();
-            }
         }
         // get command to stop
         if (typeof(StopCommandEvent).FullName == jsonBaseClass.ClassType)
