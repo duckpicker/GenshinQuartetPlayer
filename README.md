@@ -15,7 +15,6 @@ Whether it's a solo performance or a joint performance with friends in co-op.
 - Put your MIDI files (`.mid`) in this folder.
 - Click the `Refresh` button next to the `Playlist`.
 - Select the `song_name.mid` in `Playlist`.
-- Optionally, you can change `Instrument`, `Transposition` and `MIDI tracks`.
 - Click `Start Play` to play your song.
 
 <div align="center"><img src=https://i.imgur.com/HXu2CiA.png></div>
