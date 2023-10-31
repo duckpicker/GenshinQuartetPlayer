@@ -40,7 +40,7 @@ Whether it's a solo performance or a joint performance with friends in co-op.
 
 ## Multiplayer
 
-The distinctive feature of **GenshinQuartetPlayer** is the ability to play with your friends in **CO-OP** mode.
+The distinctive feature of **GenshinQuartetPlayer** is the ability to play with your friends in co-op mode.
 
 - To create a lobby, select `Multiplayer` → `Create lobby`.
 - In the opened window, enter your name (automatically filled with the computer name) and your ping in Genshin Impact.
