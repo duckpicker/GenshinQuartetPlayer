@@ -21,7 +21,7 @@ Whether it's a solo performance or a joint performance with friends in co-op.
 
  ## Features
 
- - You can change the transposition.
+- You can change the transposition.
 - You can enable/disable tracks in the MIDI file.
 - You can choose an instrument. Supported instruments:
   - `Lyre/Zither`
