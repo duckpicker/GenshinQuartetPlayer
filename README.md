@@ -59,7 +59,6 @@ The distinctive feature of **GenshinQuartetPlayer** is the ability to play with 
 
 - When you press the `Send offset` button, everyone except the admin will play a single note.
   - This function can be used to set delays for synchronized gameplay.
-  - To adjust the user's offset, clients need to make the "Ready" button turn green.
   - During testing, we noticed that for connected users, you need to specify a negative ping value for Genshin Impact and subtract an additional 10-20 milliseconds due to the delay from the host to the clients. However, your setup may be different, so I recommend taking the time to fine-tune it with your friends.
 
 - To check the delays for both the admin and the users, the admin should press the `Test` button.
