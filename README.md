@@ -8,8 +8,8 @@ Whether it's a solo performance or a joint performance with friends in co-op.
 
 ## Usage
 
-- [Downdland the .NET 7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
-- [Downland the latest version](https://github.com/duckpicker/GenshinQuartetPlayer/releases/latest) and put it in anywhere idk.
+- [Downlond the .NET 7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+- [Downlond the latest version](https://github.com/duckpicker/GenshinQuartetPlayer/releases/latest) and put it in anywhere idk.
 - Open the program with administrator rights and click `File` → `Open folder`.
     - if the folder was not created automatically, manually create the `GenshinQartetPlayer` folder in the documents library.
 - Put your MIDI files (`.mid`) in this folder.
