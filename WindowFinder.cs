@@ -13,6 +13,7 @@ namespace QuartetPlayer
                 ShowWindow(proc.MainWindowHandle, 1);
                 SetForegroundWindow(proc.MainWindowHandle);
             } 
+            Thread.Sleep(250);
         }
 
         protected static Process[] GetProcesses() {
